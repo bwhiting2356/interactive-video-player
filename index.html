@@ -5,16 +5,21 @@
     <meta charset="utf-8">
     <title>Interactive Video Player</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
+
 <!--     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,300' rel='stylesheet' type='text/css'> -->
   </head>
   <body>
-    <video width="100%" controls>
-      <source src="video/video.mp4" type="video/mp4">
-      <source src="video/video.ogg" type="video/ogg">
-      <track label="English" kind="subtitles" srclang="en" src="video/captions.vtt" default>
-    </video>
-    <div id="text">
+    <div class="wrapper">
+      <video controls>
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.ogg" type="video/ogg">
+        <track label="English" kind="subtitles" srclang="en" src="video/captions.vtt" default>
+      </video>
+      <div id="text">
+      </div>
     </div>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

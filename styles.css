@@ -1,0 +1,11 @@
+video {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        width: 950px;
+        margin: auto;
+    }
+}
