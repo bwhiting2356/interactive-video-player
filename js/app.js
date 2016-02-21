@@ -1,4 +1,5 @@
 $(document).ready(function() {
-    var JSONcaptions = $.getJSON('video/captions.txt').responseText; 
+    var response = $.getJSON('video/captions.txt'); 
+    var JSONcaptions = response.responseText;
     console.log(JSONcaptions);
 }); 
