@@ -48,7 +48,7 @@ window.onload = function() {
   var volumeBar = $("#volume-bar");
 
   playButton.on("click", function() {
-    if (video.paused == true) {
+    if (video.paused === true) {
         // Play the video
         video.play();
 
@@ -60,9 +60,10 @@ window.onload = function() {
 
         // Update the button text to 'Play'
         playButton.innerHTML = "Play";
-  }
+    }
+  });
 
-});
+};
 
 
 
