@@ -3,7 +3,7 @@ function parseCaptionText(text) {
 }
 
 
-$.get('video/captions.txt', function(data) {
+$.get('video/captions.vtt', function(data) {
    parseCaptionText(data);
 });
 
