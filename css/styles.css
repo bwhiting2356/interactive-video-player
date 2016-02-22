@@ -133,8 +133,6 @@ video {
     padding-top: 2px;
     border-radius: 3px;
     color: #333; }
-  .mejs-ted .mejs-controls .mejs-captions-button {
-    display: none; }
 .mejs-ted .mejs-button,
 .mejs-ted .mejs-time {
   position: absolute;
