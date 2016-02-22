@@ -38,6 +38,14 @@ $.get('video/captions.vtt', function(data) {
    parseCaptionText(data);
 });
 
+$('video').mediaelementplayer({
+    success: function(player, node) {
+        $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+    },
+    startLanguage: 'en',
+    translationSelector: true
+})
+
 
 // $(document).ready(function() {
 //     // var response = $.getJSON('video/captions.txt'); 
