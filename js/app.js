@@ -19,9 +19,9 @@ function parseCaptionText(text) {
                 next++;
             }
             captions.push(caption_object);
-            console.log(captions);
         }
     });
+    console.log(captions);
 }
 
 
