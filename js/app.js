@@ -3,9 +3,6 @@ $.get('video/captions.txt', function(data) {
 });
 
 
-
-
-
 $(document).ready(function() {
     // var response = $.getJSON('video/captions.txt'); 
     // var JSONcaptions = response.responseText;
