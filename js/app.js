@@ -1,8 +1,3 @@
-
-
-
-
-
 function parseCaptionText(text) {
     var captions = [];
     var raw_data = text.split("\n");
@@ -21,6 +16,11 @@ function parseCaptionText(text) {
             captions.push(caption_object);
         }
     });
+    var innerHTML = ""
+    $.each(captions, function(i, value) {
+        innerHTML += value.caption_text;
+    })
+    $('#text').html = innerHTML;
     console.log(captions);
 }
 
