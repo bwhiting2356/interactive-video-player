@@ -10,11 +10,11 @@ function parseCaptionText(text) {
         if ((value.length === 1) && (!isNaN(value))) {
             var caption_object = {
                 index: value,
-                time-code: raw_data[i + 1],
+                timecode: raw_data[i + 1],
                 caption_text: "",
-            }
+            };
             var next = i + 2;
-            while (raw_data[next] != "") {
+            while (raw_data[next] !== "") {
                 caption_object.caption_text += raw_data[next];
                 next++;
             }
