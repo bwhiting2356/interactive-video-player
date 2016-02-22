@@ -5,9 +5,20 @@
 
 function parseCaptionText(text) {
     var captions = [];
-    $.each(text.split("\n"), function(index, value) {
+    var raw_data = text.split("\n");
+    $.each(raw_data, function(i, value) {
         if ((value.length === 1) && (!isNaN(value))) {
-            console.log(value);
+            var caption_object = {
+                index: value,
+                time-code: raw_data[i + 1],
+                caption_text: "",
+            }
+            var next = i + 2;
+            while (raw_data[next] != "") {
+                caption_object.caption_text += raw_data[next];
+                next++;
+            }
+            captions.push(caption_object);
         }
     });
 }
