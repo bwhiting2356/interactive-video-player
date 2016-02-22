@@ -47,6 +47,21 @@ window.onload = function() {
   var seekBar = $("#seek-bar");
   var volumeBar = $("#volume-bar");
 
+  playButton.on("click", function() {
+    if (video.paused == true) {
+        // Play the video
+        video.play();
+
+        // Update the button text to 'Pause'
+        playButton.innerHTML = "Pause";
+    } else {
+        // Pause the video
+        video.pause();
+
+        // Update the button text to 'Play'
+        playButton.innerHTML = "Play";
+  });
+
 }
 
 
