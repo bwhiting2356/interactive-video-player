@@ -1,5 +1,15 @@
+
+
+
+
+
 function parseCaptionText(text) {
-    console.log(text.split("\n"));
+    var captions = [];
+    $.each(text.split("\n"), function(index, value) {
+        if (value.length === 1) {
+            console.log(value);
+        }
+    })
 }
 
 
