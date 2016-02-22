@@ -6,7 +6,7 @@
 function parseCaptionText(text) {
     var captions = [];
     $.each(text.split("\n"), function(index, value) {
-        if (value.length === 1) {
+        if (value.length === 1) && !(isNaN(value)) {
             console.log(value);
         }
     })
