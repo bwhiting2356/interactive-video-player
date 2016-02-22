@@ -1,7 +1,7 @@
 var caption_html = "\
 <p class='caption'>\
 {caption}\
-<p>\
+</p>\
 "
 
 
