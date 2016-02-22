@@ -44,7 +44,7 @@ $('video').mediaelementplayer({
     },
     startLanguage: 'en',
     translationSelector: true
-})
+});
 
 
 // $(document).ready(function() {
