@@ -36,16 +36,16 @@ $.get('video/captions.vtt', function(data) {
 window.onload = function() {
 
   // Video
-  var video = $('#video');
+  var video = document.getElementById("video");
 
   // Buttons
-  var playButton = $("#play-pause");
-  var muteButton = $("#mute");
-  var fullScreenButton = $("full-screen");
+  var playButton = document.getElementById("play-pause");
+  var muteButton = document.getElementById("mute");
+  var fullScreenButton = document.getElementById("full-screen");
 
   // Sliders
-  var seekBar = $("#seek-bar");
-  var volumeBar = $("#volume-bar");
+  var seekBar = document.getElementById("seek-bar");
+  var volumeBar = document.getElementById("volume-bar");
 
   playButton.on("click", function() {
     if (video.paused === true) {
