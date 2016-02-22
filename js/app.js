@@ -60,9 +60,9 @@ window.onload = function() {
 
         // Update the button text to 'Play'
         playButton.innerHTML = "Play";
-  });
+  }
 
-}
+});
 
 
 
