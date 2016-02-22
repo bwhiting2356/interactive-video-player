@@ -1,6 +1,6 @@
 var caption_html = "\
 <p class='caption'>\
-{caption} \
+{caption}\
 <p>\
 "
 
@@ -17,7 +17,7 @@ function parseCaptionText(text) {
             };
             var next = i + 2;
             while (raw_data[next] !== "") {
-                caption_object.caption_text += raw_data[next];
+                caption_object.caption_text += raw_data[next] + " ";
                 next++;
             }
             captions.push(caption_object);
