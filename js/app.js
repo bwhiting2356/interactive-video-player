@@ -50,6 +50,7 @@ window.onload = function() {
   playButton.onclick = function() {
     if (video.paused === true) {
         // Play the video
+        console.log("video play");
         video.play();
 
         // Update the button text to 'Pause'
@@ -57,6 +58,7 @@ window.onload = function() {
     } else {
         // Pause the video
         video.pause();
+        console.log("video pause");
 
         // Update the button text to 'Play'
         playButton.innerHTML = "Play";
