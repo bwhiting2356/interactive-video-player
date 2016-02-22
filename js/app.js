@@ -20,7 +20,7 @@ function parseCaptionText(text) {
     $.each(captions, function(i, value) {
         innerHTML += value.caption_text;
     });
-    $('#text').html = innerHTML;
+    $('#text').html(innerHTML);
     console.log(innerHTML);
     console.log(captions);
 }
