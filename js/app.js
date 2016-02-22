@@ -47,7 +47,7 @@ window.onload = function() {
   var seekBar = document.getElementById("seek-bar");
   var volumeBar = document.getElementById("volume-bar");
 
-  playButton.on("click", function() {
+  playButton.onclick = function() {
     if (video.paused === true) {
         // Play the video
         video.play();
@@ -61,8 +61,7 @@ window.onload = function() {
         // Update the button text to 'Play'
         playButton.innerHTML = "Play";
     }
-  });
-
+  };
 };
 
 
