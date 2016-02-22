@@ -21,6 +21,7 @@ function parseCaptionText(text) {
         innerHTML += value.caption_text;
     });
     $('#text').html = innerHTML;
+    console.log(innerHTML);
     console.log(captions);
 }
 
