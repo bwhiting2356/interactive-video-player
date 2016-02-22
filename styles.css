@@ -2,6 +2,11 @@ video {
     width: 100%;
 }
 
+#text {
+    padding: 15px;
+    line-height: 1.3em;
+}
+
 .caption {
     display: inline;
 }
