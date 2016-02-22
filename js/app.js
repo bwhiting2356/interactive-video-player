@@ -1,3 +1,10 @@
+var caption_html = "\
+<p class='caption'>\
+{caption} \
+<p>\
+"
+
+
 function parseCaptionText(text) {
     var captions = [];
     var raw_data = text.split("\n");
@@ -16,12 +23,12 @@ function parseCaptionText(text) {
             captions.push(caption_object);
         }
     });
-    var innerHTML = "";
+    var div_text = "";
     $.each(captions, function(i, value) {
-        innerHTML += value.caption_text;
+        div_text += caption_html.replace("{caption}", value.caption_text);
     });
-    $('#text').html(innerHTML);
-    console.log(innerHTML);
+    $('#text').html(div_text);
+    console.log(div_text);
     console.log(captions);
 }
 
