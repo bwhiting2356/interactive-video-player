@@ -1,9 +1,4 @@
-var caption_html = "\
-<p class='caption'>\
-{caption}\
-</p>\
-"
-
+var caption_html = "<p class='caption'>{caption}</p>";
 
 function parseCaptionText(text) {
     var captions = [];
@@ -38,13 +33,31 @@ $.get('video/captions.vtt', function(data) {
    parseCaptionText(data);
 });
 
-$('video').mediaelementplayer({
-    success: function(player, node) {
-        $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
-    },
-    startLanguage: 'en',
-    translationSelector: true
-});
+window.onload = function() {
+
+  // Video
+  var video = $('#video');
+
+  // Buttons
+  var playButton = $("#play-pause");
+  var muteButton = $("#mute");
+  var fullScreenButton = $("full-screen");
+
+  // Sliders
+  var seekBar = $("#seek-bar");
+  var volumeBar = $("#volume-bar");
+
+}
+
+
+
+// $('video').mediaelementplayer({
+//     success: function(player, node) {
+//         $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+//     },
+//     startLanguage: 'en',
+//     translationSelector: true
+// });
 
 
 // $(document).ready(function() {

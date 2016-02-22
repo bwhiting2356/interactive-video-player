@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Interactive Video Player</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="js/mejs/mediaelementplayer.min.css">
+    <!-- <link rel="stylesheet" href="js/mejs/mediaelementplayer.min.css"> -->
 <!--     <link rel="stylesheet" href="js/mejs/mejs-skins.css"> -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -13,17 +13,27 @@
   </head>
   <body>
     <div class="wrapper">
-      <video class="mejs-ted" controls>
+      <video id="video" controls>
         <source src="video/video.mp4" type="video/mp4">
         <source src="video/video.ogg" type="video/ogg">
+          <p>
+            Your browser doesn't support HTML5 video.
+            <a href="video/video.mp4">Download</a> the video instead.
+          </p>
         <track label="English" kind="subtitles" srclang="en" src="video/captions.vtt" default>
       </video>
+      <div id="video-controls">
+        <button type="button" id="play-pause">Play</button>
+        <input type="range" id="seek-bar" value="0">
+        <button type="button" id="mute">Mute</button>
+        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+      </div>
       <div id="text">
       </div>
     </div>
 <!--     // <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> -->
     <script src="js/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/mejs/mediaelement-and-player.min.js" type="text/javascript" charset="utf-8"></script>
+<!--     // <script src="js/mejs/mediaelement-and-player.min.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
