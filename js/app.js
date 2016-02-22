@@ -19,6 +19,7 @@ function parseCaptionText(text) {
             while (raw_data[next] !== "") {
                 caption_object.caption_text += raw_data[next] + " ";
                 next++;
+                console.log(caption_object.caption_text);
             }
             captions.push(caption_object);
         }
