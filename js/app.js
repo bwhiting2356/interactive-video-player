@@ -101,22 +101,6 @@ function update_current_time() {
     play_percentage.style.width = "calc((100% - 15px) * " + time_percentage + ")";
 }
 
-function update_buffer_div(e) {
-    var video = document.getElementById("video");
-    var percent = null;
-    if (video && video.buffered && video.buffered.length > 0 && video.buffered.end && video.duration) {
-        percent = video.buffered.end(0) / video.duration;
-    } 
-    else if (video && video.bytesTotal != undefined && video.bytesTotal > 0 && video.bufferedBytes != undefined) {
-        percent = video.bufferedBytes / video.bytesTotal;
-    }
-    if (percent !== null) {
-        percent = Math.min(1, Math.max(0, percent));
-        var buffer_div = document.getElementById('buffer-percentage');
-        buffer_div.style.width = "calc((100% - 15px) * " + percent + ")";
-    }
-}
-
 window.onload = function() {
     var video = document.getElementById("video");
 
