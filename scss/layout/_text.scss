@@ -1,0 +1,24 @@
+#text {
+    padding: $margin-basic;
+    line-height: 1.5em;
+    background: white;
+    margin-top: -10px;
+    font-family: "Open Sans", sans-serif;
+    color: grey;
+
+    @include desktop {
+        width: 950px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.current-caption {
+    color: orange;
+}
+
+.caption {
+    display: inline;
+    cursor: pointer; 
+}

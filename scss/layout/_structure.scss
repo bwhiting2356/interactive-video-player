@@ -1,0 +1,25 @@
+/**** STRUCTURE ****/
+
+#page-wrapper {
+    position: relative;
+    @include desktop {
+        width: 950px;
+        margin: auto;
+    }
+}
+
+#video-wrapper {
+    background: $color-background;
+    position: relative;
+}
+
+:-webkit-full-screen {
+    background-color: $color-background;
+    width: 100%;
+    height: 100%;
+}
+
+:-moz-full-screen {
+    width: 100%;
+    height: 100%;
+}
