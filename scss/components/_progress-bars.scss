@@ -51,4 +51,7 @@
     &::-webkit-slider-thumb {
         background-color: transparent;
     }
+    &::-moz-range-thumb {
+        background-color: transparent;
+    }
 }

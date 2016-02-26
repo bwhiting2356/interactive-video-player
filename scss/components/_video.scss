@@ -6,12 +6,14 @@ video {
     position: relative;
 }
 
-::cue {
-   font-family: "Open Sans", sans-serif;
-   font-size: 0.7em;
-}
+// ::cue {
+//    font-family: "Open Sans", sans-serif;
+//    font-size: 0.7em;
+// }
 
-track {
-    margin-bottom: 100px;
-    padding-bottom: 100px;
+video::-webkit-media-text-track-display {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px !important;
+    position: relative !important;
+    top: calc(100% - 100px) !important;
 }
