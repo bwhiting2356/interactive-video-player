@@ -201,7 +201,7 @@ window.onload = function() {
     fullScreenButton.onclick = toggleFullScreen;
 
     var seekBar = document.getElementById("seek-bar");
-    seekBar.addEventListener("change", function() {
+    seekBar.addEventListener("click", function() {
         var time = video.duration * (seekBar.value / 100);
         video.currentTime = time;
         update_current_time();
@@ -215,7 +215,6 @@ window.onload = function() {
 
     video.addEventListener("timeupdate", function() {
         var value = (100 / video.duration) * video.currentTime;
-        seekBar.value = value;
         update_current_time();
     });
 
