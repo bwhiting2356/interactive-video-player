@@ -1,0 +1,13 @@
+/**** MIXINS ****/
+
+@mixin make_icon_button($icon-name, $width, $height) {
+    background-image: url('../icons/#{$icon-name}.png');
+    width: $width;
+    height: $height;
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
