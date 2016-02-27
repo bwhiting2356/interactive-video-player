@@ -214,7 +214,6 @@ window.onload = function() {
     video.textTracks[0].id = 'caption-style';
 
     video.addEventListener("timeupdate", function() {
-        var value = (100 / video.duration) * video.currentTime;
         update_current_time();
     });
 
