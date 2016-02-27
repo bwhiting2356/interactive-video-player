@@ -371,12 +371,6 @@ video {
   z-index: 1;
   position: relative; }
 
-video::-webkit-media-text-track-display {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px !important;
-  position: relative !important;
-  top: calc(100% - 100px) !important; }
-
 /**** PROGRESS-BARS ****/
 #play-percentage, #buffer-percentage, #base {
   height: 2px;
